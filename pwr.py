@@ -26,7 +26,7 @@ print(alldata)
 
 # saving output to csv file
 
-datapwr=open('./file excel/powerrangers.csv','w',newline='')
+datapwr=open('./file excel/powerrangers.csv','w',newline='',encoding='utf8')
 #input header
 writer=csv.DictWriter(datapwr,fieldnames=["no", "title", "first aired","last aired"])
 writer.writeheader()
